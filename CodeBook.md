@@ -23,7 +23,7 @@ The following process was used to clean, format, and merge the Test and Training
 
 1. Used the data from the features.txt file to label the columns in each data set
 2. Trimmed each data set to only the mean and standard deviation variables as specified in the requirements
-    * Kept any variable with mean or std in its name. Requirement was not specific on which mean variables to keep, so all were included
+    * Kept any variable with mean or std in its function name. Requirement was not specific on which mean variables to keep, so all were included.  Exception are ones that are only used in calculating the angle.
 3. Joined the corresponding activity data to each data set on the assumption that the data rows were ordered to match
 4. Joined the corresponding subject data to each data set on the assumption that the data rows were ordered to match
 5. Performed an outer left join by activity ID of each data set with the activity names from the activity_labels.txt file.
@@ -45,11 +45,13 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
-The set of variables that were estimated from these signals are: 
+The set of variables kept in this new data set were estimated from the above described signals are: 
 
 mean(): Mean value
 
 std(): Standard deviation
+
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
 
 * __tBodyAcc-mean()-X__
 * __tBodyAcc-mean()-Y__
