@@ -25,11 +25,11 @@ The following process was used to clean, format, and merge the Test and Training
 2. Trimmed each data set to only the mean and standard deviation variables as specified in the requirements
     * Kept any variable with mean or std in its name. Requirement was not specific on which mean variables to keep, so all were included
 3. Joined the corresponding activity data to each data set on the assumption that the data rows were ordered to match
-4. Joined the corresponding subject data to each data set on the assumpiont that the data rows were ordered to match
+4. Joined the corresponding subject data to each data set on the assumption that the data rows were ordered to match
 5. Performed an outer left join by activity ID of each data set with the activity names from the activity_labels.txt file.
 6. Removed the activity ID column from the data sets since it was no longer needed
 7. Reordered the data sets so that the first two columns were Subject and Activity (not required, but makes it is easier to read)
-8. Merged the training and test data sets into the file data set called __cleanedData__
+8. Merged the training and test data sets into the final data set called __cleanedData__
   * It was assumed that a Subject ID number represented the same person between the test and training data sets
 9. Wrote out the new data set to __cleanedData.txt__
 
@@ -120,6 +120,3 @@ The following process was used to create the averagedData data set. The requirem
 
 ###Variable Definitions
 The varaibles in this data set have the same names as ones in the cleanedData data set, but the values are actually averages of those variables for each Subject and Activity pair.
-
-
-
