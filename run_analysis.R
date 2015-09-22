@@ -61,7 +61,7 @@ cleantable <- function(baseData, subjects, activitydata, lbl_column, lbl_activit
   cleanData <- subset(cleanData, select=-c(AID))
   
   # Reorder the columns so that the first two are Subject and Activity
-  cleanData <- cleanData[c(59,1:ncol(cleanData)-1)]
+  cleanData <- cleanData[c(ncol(cleanData),1:ncol(cleanData)-1)]
   
   return(cleanData)
 }
