@@ -11,7 +11,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 It was collected from the accelerometers from a Samsung Galaxy S smartphone while test subjects were performing different physical activities.
 
-The script expects the data to be unzipped in a sub directory of the parent directory containing the script.  It also expects it to be in the below file structure.  The script does not consume the raw data files, but only the post processed ones that are listed below.
+The script expects the data to be unzipped in a sub directory of the directory containing the script.  It also expects it to be in the below file structure.  The script does not consume the raw data files, but only the post processed ones that are listed below.
 
   * run_analysis.R
   * __UCI HAR Dataset__
